@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Figtree", sans-serif;
+        }
+
+        body {
+            background: #c09a41;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding-top: 120px; /* Adjusted padding to account for new header height */
+            height: 100vh;
+            justify-content: center;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #c09a41;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header:hover {
+            color: #a855f7;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #a855f7;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .contact-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-card h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .contact-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-card a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+
+        /* Responsive Design */
+        }@media (max-width: 768px) {
+    .post {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .post {
+        flex-basis: 100%;
+    }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="aboutMe.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         <div class="link"><a href="index.html">Log Out</a></div>
+        </ul>
+    </nav>
+</header>
+
+
+
+<div class="contact-card">
+    <h2>Cherry Jane Capucanan Vicente</h2>
+    <p>PRK.LUBI, ALBA,TAGO<br>SURIGAO DEL SUR</p>
+    <p>Phone: <a href="tel:09639159615">09639159615</a></p>
+    <p>Email: <a href="mailto:cherryjanevicente@gmail.com">cherryjanevicente@gmail.com</a></p>
+</div>
+
+</body>
+</html>

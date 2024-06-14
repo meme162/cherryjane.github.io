@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="login-box">
+            <div class="login-header">
+                <span>new</span>
+            </div>
+            <form action="home.html" method="post" enctype="multipart/form-data" onsubmit="return validateResetPassword()">
+                <div class="input-box">
+                    <input type="password" id="new-password" class="input-field" required>
+                    <label for="new-password" class="label">New Password</label>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="confirm-new-password" class="input-field" required>
+                    <label for="confirm-new-password" class="label">Confirm New Password</label>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="input-submit" value="Reset Password">
+                </div>
+                <div class="register">
+                    <span>Remember your password? <a href="login.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validateResetPassword() {
+            var newPassword = document.getElementById("new-password").value;
+            var confirmNewPassword = document.getElementById("confirm-new-password").value;
+            if (newPassword !== confirmNewPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
